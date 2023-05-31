@@ -9,22 +9,20 @@
 4. Copy everything from this repository lib folder to [Arduino library folder](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries#manual-installation) (e.g. `C:\Users\YourName\Documents\Arduino\libraries`)
 5. Select the correct settings in the Tools menu as shown below.
 
-| Setting                  | Value                            |
-| :----------------------- | :------------------------------- |
-| Board                    | ESP32 Dev Module                 |
-| USB CDC On Boot          | Disabled                         |
-| CPU Frequency            | 240MHz (WiFi)                    |
-| Core Debug Level         | None                             |
-| USB DFU On Boot          | Enabled                          |
-| Events Run On            | Core 1                           |
-| Flash Mode               | QIO 80MHz                        |
-| Flash Size               | 8MB (64Mb)                       |
-| JTAG Adapter             | Disabled                         |
-| Arduino Runs On          | Core 1                           |
-| USB Firmware MSC On Boot | Disabled                         |
-| Partition Scheme         | Huge APP (3MB APP/1.5MB SPIFFS)  |
-| PSRAM                    | OPI PSRAM                        |
-| USB Mode                 | Disabled                         |
+| Setting                              | Value                                   |
+| :----------------------------------- | :-------------------------------------- |
+| Board                                | ESP32 Dev Module                        |
+| Upload Speed                         | 921600                                  |
+| CPU Frequency                        | 240MHz (WiFi)                           |
+| Flash Mode                           | QIO 80MHz                               |
+| Flash Size                           | 8MB (64Mb)                              |
+| Partition Scheme                     | 8MB with spiffs (3MB APP/1.5MB SPIFFS)  |
+| Core Debug Level                     | 无                                      |
+| PSRAM                                | Enabled                                 |
+| Events Run On                        | Core 1                                  |
+| Arduino Runs On                      | Core 1                                  |
+| Erase All Flash Before Sketch Upload | Disabled                                |
+| JTAG Adapter                         | Disabled                                |
 
 ### PlatformIO
 
