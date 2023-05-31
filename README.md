@@ -1,14 +1,5 @@
 ﻿<h1 align = "center"> 🌟T-Watch-2021-lvgl🌟</h1>
 
-
-## Quick Start
-
-The board uses USB as the JTAG upload port. When printing serial port information on USB, CDC_ON_BOOT configuration needs to be turned on. 
-If the port cannot be found when uploading the program or the USB has been used for other functions, the port does not appear. 
-Please enter the upload mode manually. 
-1.Connect the board to the computer USB
-2.Click (→) to upload firmware
-
 ### Arduino
 
 1. In Arduino Preferences, on the Settings tab, enter the `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json` URL in the `Additional boards manager URLs` input box. 
@@ -20,19 +11,20 @@ Please enter the upload mode manually.
 
 | Setting                  | Value                            |
 | :----------------------- | :------------------------------- |
-| USB CDC On Boot          | Enabled                          |
+| Board                    | ESP32 Dev Module                 |
+| USB CDC On Boot          | Disabled                         |
 | CPU Frequency            | 240MHz (WiFi)                    |
 | Core Debug Level         | None                             |
 | USB DFU On Boot          | Enabled                          |
 | Events Run On            | Core 1                           |
 | Flash Mode               | QIO 80MHz                        |
-| Flash Size               | 4MB (32Mb)                       |
-| JTAG Adapter             | Integrated USB JTAG              |
+| Flash Size               | 8MB (64Mb)                       |
+| JTAG Adapter             | Disabled                         |
 | Arduino Runs On          | Core 1                           |
 | USB Firmware MSC On Boot | Disabled                         |
-| Partition Scheme         | Huge APP (3MB No OTA/1MB SPIFFS) |
+| Partition Scheme         | Huge APP (3MB APP/1.5MB SPIFFS)  |
 | PSRAM                    | OPI PSRAM                        |
-| USB Mode                 | Hardware CDC and JTAG            |
+| USB Mode                 | Disabled                         |
 
 ### PlatformIO
 
